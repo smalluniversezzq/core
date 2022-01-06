@@ -1,0 +1,30 @@
+
+.one-widget {
+    .ant-form-item {
+      display: flex;
+      /deep/ .ant-form-item-label {
+        flex-shrink: 0;
+        > label::after {
+          content:'';
+          display: none;
+        }
+      }
+      /deep/ .ant-form-item-control-wrapper {
+        flex-grow: 1;
+        max-width: 100%;
+      }
+      .form-item-label.level-1 {
+        width: 100px;
+        padding-right: 10px;
+      }
+      .form-item-label.level-2 {
+        width: 80px;
+        padding-right: 10px;
+      }
+      .ant-form-explain {
+        position: absolute;
+        bottom: -20px;
+        min-width: 200px;
+      }
+    }
+  }

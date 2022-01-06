@@ -1,0 +1,327 @@
+// 滚动条颜色
+@scrollbar-thumb: #b7b7b7;
+@scrollbar-track: #e2e2e2;
+
+.week-mode{
+  overflow: hidden;
+  filter: invert(80%);
+}
+ul {
+  list-style-type: none;
+}
+.ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab .ant-tabs-close-x{
+  color:rgba(0, 0, 0, 0.2);
+}
+.beauty-scroll{
+  scrollbar-color: @scrollbar-thumb @scrollbar-track;
+  scrollbar-width: auto;
+  -ms-overflow-style:none;
+  position: relative;
+  &::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0,0,0,0);
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: @scrollbar-thumb;
+    background-clip: padding-box;
+    border: 3px solid rgba(0,0,0,0);
+    &:hover{
+      border-color: @scrollbar-thumb;
+    }
+  }
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0);
+    border-radius: 10px;
+    background-clip: padding-box;
+    background: rgba(0,0,0,0);
+    border: 3px solid rgba(0,0,0,0);
+    &:hover{
+      background: @scrollbar-track;
+      border-color: @scrollbar-track;
+    }
+    // &:hover.beauty-scroll::-webkit-scrollbar-thumb{
+    //   border-color: @scrollbar-thumb;
+    // }
+  }
+}
+.split-right{
+  &:not(:last-child) {
+    border-right: 1px solid rgba(98, 98, 98, 0.2);
+  }
+}
+.disabled{
+  cursor: not-allowed;
+  color: @disabled-color;
+  pointer-events: none;
+}
+
+a {
+  color: inherit;
+  &:hover {
+    color: @link-hover-color;
+  }
+}
+.ant-table-body, .ant-drawer-wrapper-body{
+  scrollbar-color: @scrollbar-thumb @scrollbar-track;
+  scrollbar-width: auto;
+  -ms-overflow-style:none;
+  position: relative;
+  overflow-x: auto !important;
+  &::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0,0,0,0);
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: @scrollbar-thumb;
+    background-clip: padding-box;
+    border: 3px solid rgba(0,0,0,0);
+    &:hover{
+      border-color: @scrollbar-thumb;
+    }
+  }
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0);
+    border-radius: 10px;
+    background-clip: padding-box;
+    background: rgba(0,0,0,0);
+    border: 3px solid rgba(0,0,0,0);
+    &:hover{
+      background: @scrollbar-track;
+      border-color: @scrollbar-track;
+    }
+    // &:hover.beauty-scroll::-webkit-scrollbar-thumb{
+    //   border-color: @scrollbar-thumb;
+    // }
+  }
+}
+.ant-table .ant-table-tbody{
+  scrollbar-color: @scrollbar-thumb @scrollbar-track;
+  scrollbar-width: auto;
+  -ms-overflow-style:none;
+  position: relative;
+  &::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0,0,0,0);
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: @scrollbar-thumb;
+    background-clip: padding-box;
+    border: 3px solid rgba(0,0,0,0);
+    &:hover{
+      border-color: @scrollbar-thumb;
+    }
+  }
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0);
+    border-radius: 10px;
+    background-clip: padding-box;
+    background: rgba(0,0,0,0);
+    border: 3px solid rgba(0,0,0,0);
+    &:hover{
+      background: @scrollbar-track;
+      border-color: @scrollbar-track;
+    }
+    // &:hover.beauty-scroll::-webkit-scrollbar-thumb{
+    //   border-color: @scrollbar-thumb;
+    // }
+  }
+}
+// 列表的选中与鼠标悬浮样式 start
+.ant-table-tbody > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td {
+  background: #fafafa;
+}
+.ant-table-tbody > tr.ant-table-row-selected td {
+  background: #e6f7ff;
+}
+// 列表的选中与鼠标悬浮样式 end
+
+// 时间选择器滚动条美化 start
+.ant-time-picker-panel {
+  .ant-time-picker-panel-select {
+    scrollbar-color: @scrollbar-thumb @scrollbar-track;
+    scrollbar-width: thin;
+    -ms-overflow-style:none;
+    position: relative;
+    &::-webkit-scrollbar{
+      width: 10px;
+      height: 10px;
+      background-color: rgba(0,0,0,0);
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background: @scrollbar-thumb;
+      background-clip: padding-box;
+      border: 3px solid rgba(0,0,0,0);
+      &:hover{
+        border-color: @scrollbar-thumb;
+      }
+    }
+    &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0);
+      border-radius: 10px;
+      background-clip: padding-box;
+      background: rgba(0,0,0,0);
+      border: 3px solid rgba(0,0,0,0);
+      &:hover{
+        background: @scrollbar-track;
+        border-color: @scrollbar-track;
+      }
+      // &:hover.beauty-scroll::-webkit-scrollbar-thumb{
+      //   border-color: @scrollbar-thumb;
+      // }
+    }
+  }
+}
+// 时间选择器滚动条美化 end 
+
+// 超出省略 和 多行超出省略 start
+// 文字的盒子要有宽度
+.text-overflow-1{
+  overflow:hidden; text-overflow:ellipsis; white-space:nowrap
+}
+.text-overflow-2{
+  overflow:hidden; 
+  display: -webkit-box;
+  text-overflow:ellipsis; 
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.text-overflow-3{
+  overflow:hidden; 
+  display: -webkit-box;
+  text-overflow:ellipsis; 
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+// 超出省略 和 多行超出省略 end
+
+// 图片预览样式
+  .viewer-canvas{
+    img{
+      padding: 24px;
+      border-radius: 4px;
+      background: #fff;
+    }
+  }
+// 间距
+.mt{margin-top:20px}
+.ml{margin-left:20px}
+.mr{margin-right:20px}
+.mb{margin-bottom:20px}
+.pt{padding-top: 20px;}
+.pl{padding-left: 20px;}
+.pr{padding-right: 20px;}
+.pb{padding-bottom: 20px;}
+.mt-sm{margin-top:10px}
+.ml-sm{margin-left:10px}
+.mr-sm{margin-right:10px}
+.mb-sm{margin-bottom:10px}
+.tar{text-align: right;}
+.tac{text-align: center;}
+.tal{text-align: left;}
+.pl-0{padding-left: 0px;}
+.lt{float: left;}
+.rt{float: right;}
+.cursor-pointer{cursor:pointer;}
+.wangeditor-content{
+  /* table 样式 */
+  table {
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+  }
+  table td,
+  table th {
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding: 3px 5px;
+  }
+  table th {
+    border-bottom: 2px solid #ccc;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+  
+  /* blockquote 样式 */
+  blockquote {
+    display: block;
+    border-left: 8px solid #d0e5f2;
+    padding: 5px 10px;
+    margin: 10px 0;
+    line-height: 1.4;
+    font-size: 100%;
+    background-color: #f1f1f1;
+  }
+  
+  /* code 样式 */
+  code {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    padding: 3px 5px;
+    margin: 0 3px;
+  }
+  pre code {
+    display: block;
+  }
+  
+  /* ul ol 样式 */
+  ul, ol {
+    margin: 10px 0 10px 20px;
+  }
+  html, address,blockquote,body, dd, div,dl, dt, fieldset, form,frame, frameset,h1, h2, h3, h4,h5, h6, noframes,ol, p, ul, center,dir, hr, menu, pre { display: block } 
+  li { display: list-item } 
+  head { display: none } 
+  table { display: table } 
+  tr { display: table-row } 
+  thead { display: table-header-group } 
+  tbody { display: table-row-group } 
+  tfoot { display: table-footer-group } 
+  col { display: table-column } 
+  colgroup { display: table-column-group } 
+
+  td, th { display: table-cell; } 
+
+  caption { display: table-caption } 
+
+  th { font-weight: bolder; text-align: center } 
+  caption { text-align: center } 
+  body { margin: 8px; line-height: 1.12 } 
+  h1 { font-size: 2em; margin: .67em 0 } 
+  h2 { font-size: 1.5em; margin: .75em 0 } 
+  h3 { font-size: 1.17em; margin: .83em 0 } 
+  h4, p, blockquote, ul, fieldset, form, ol, dl, dir, menu { margin: 1.12em 0 } 
+  h5 { font-size: .83em; margin: 1.5em 0 } 
+  h6 { font-size: .75em; margin: 1.67em 0 } 
+  h1, h2, h3, h4, h5, h6, b,strong { font-weight: bolder } 
+  i, cite, em,var, address { font-style: italic } 
+  pre, tt, code, kbd, samp { font-family: monospace } 
+  pre { white-space: pre } 
+  button, textarea, input, object, select { display:inline-block; } 
+  big { font-size: 1.17em } 
+  small, sub, sup { font-size: .83em } 
+  sub { vertical-align: sub } 
+  sup { vertical-align: super } 
+  table { border-spacing: 2px; } 
+  thead, tbody, tfoot { vertical-align: middle } 
+  td, th { vertical-align: inherit } 
+  s, strike, del { text-decoration: line-through } 
+
+  hr { border: 1px inset } 
+
+  ol, ul, dir, menu, dd { margin-left: 40px } 
+
+  ol { list-style-type: decimal } 
+  ol ul, ul ol, ul ul, ol ol { margin-top: 0; margin-bottom: 0 } 
+  u, ins { text-decoration: underline } 
+
+
+}
+.bg{background: @background-color-light;}

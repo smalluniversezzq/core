@@ -1,0 +1,25 @@
+
+  .name-column {
+    min-width: 300px;
+    flex: 1;
+  }
+  .img-column {
+    width: 80px;
+  }
+  .img-classify{
+    width: 40px;
+    height: 40px;
+  }
+  .img-classify img{
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .time-column {
+    width: 160px;
+  }
+  .status-column {
+    width: 60px;
+  }
+  .operate-column {
+    width: 100px;
+  }

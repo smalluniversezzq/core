@@ -1,0 +1,18 @@
+
+  .name-column {
+    min-width: 300px;
+    flex: 1;
+  }
+  .img-column {
+    width: 25%;
+    padding-right: 10px;
+  }
+  .time-column {
+    width: 160px;
+  }
+  .status-column {
+    width: 100px;
+  }
+  .operate-column {
+    width: 50px;
+  }

@@ -1,0 +1,22 @@
+
+  .name-column {
+    min-width: 400px;
+    flex: 1;
+  }
+  .img-column {
+    width: 125px;
+  }
+  .link-column{
+    min-width: 300px;
+    width: 300px;
+    padding-right: 10px;
+  }
+  .time-column {
+    width: 180px;
+  }
+  .status-column {
+    width: 60px;
+  }
+  .operate-column {
+    width: 170px;
+  }

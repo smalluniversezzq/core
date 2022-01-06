@@ -1,0 +1,150 @@
+{
+  "spec": [
+    {
+      "goods_id": "458",
+      "title": "大床",
+      "id": "344",
+      "is_main_spec": "0",
+      "items": [
+        {
+          "title": "小窗",
+          "id": "1660",
+          "spec_id": "344",
+          "specId": "344"
+        },
+        {
+          "title": "家庭房",
+          "id": "1661",
+          "spec_id": "344",
+          "specId": "344"
+        }
+      ]
+    },
+    {
+      "id": "spec1601978081136",
+      "title": "尺寸",
+      "is_main_spec": "0",
+      "items": [
+        {
+          "id": "childSpec1601978081136",
+          "title": "1.5",
+          "specId": "spec1601978081136"
+        },
+        {
+          "id": "childSpec1601978095875",
+          "title": "1.8",
+          "specId": "spec1601978081136"
+        },
+        {
+          "id": "childSpec1601978098960",
+          "title": "2",
+          "specId": "spec1601978081136"
+        }
+      ]
+    }
+  ],
+  "option": [
+    {
+      "thumb": "",
+      "price": "11.00",
+      "line_price": "20.00",
+      "prime_price": "17.00",
+      "stock": 18,
+      "code": "k23",
+      "spec_img": "",
+      "bar_code": "20",
+      "weight": "12.00",
+      "tmpid": "_tmpID_0",
+      "title": "小窗+1.5",
+      "specs": [
+        "1660",
+        "childSpec1601978081136"
+      ]
+    },
+    {
+      "thumb": "",
+      "price": "10.00",
+      "line_price": "20.00",
+      "prime_price": "17.00",
+      "stock": 18,
+      "code": "k23",
+      "spec_img": "",
+      "bar_code": "20",
+      "weight": "12.00",
+      "tmpid": "_tmpID_1",
+      "title": "小窗+1.8",
+      "specs": [
+        "1660",
+        "childSpec1601978095875"
+      ]
+    },
+    {
+      "thumb": "",
+      "price": "0",
+      "line_price": 0,
+      "prime_price": "17.00",
+      "stock": 18,
+      "code": "k23",
+      "spec_img": "",
+      "bar_code": "20",
+      "weight": "12.00",
+      "tmpid": "_tmpID_2",
+      "title": "小窗+2",
+      "specs": [
+        "1660",
+        "childSpec1601978098960"
+      ]
+    },
+    {
+      "thumb": "",
+      "price": "10.00",
+      "line_price": "20.00",
+      "prime_price": "17.00",
+      "stock": 18,
+      "code": "k23",
+      "spec_img": "",
+      "bar_code": "20",
+      "weight": "12.00",
+      "tmpid": "_tmpID_3",
+      "title": "家庭房+1.5",
+      "specs": [
+        "1661",
+        "childSpec1601978081136"
+      ]
+    },
+    {
+      "thumb": "",
+      "price": "10.00",
+      "line_price": "20.00",
+      "prime_price": "17.00",
+      "stock": 18,
+      "code": "k23",
+      "spec_img": "",
+      "bar_code": "20",
+      "weight": "12.00",
+      "tmpid": "_tmpID_4",
+      "title": "家庭房+1.5",
+      "specs": [
+        "1661",
+        "childSpec1601978081136"
+      ]
+    },
+    {
+      "thumb": "",
+      "price": "10.00",
+      "line_price": "20.00",
+      "prime_price": "17.00",
+      "stock": 18,
+      "code": "k23",
+      "spec_img": "",
+      "bar_code": "20",
+      "weight": "12.00",
+      "tmpid": "_tmpID_5",
+      "title": "家庭房+1.5",
+      "specs": [
+        "1661",
+        "childSpec1601978081136"
+      ]
+    }
+  ]
+}

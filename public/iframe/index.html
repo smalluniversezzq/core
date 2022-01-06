@@ -1,0 +1,25 @@
+<div id="app">
+  {{msg}}
+  <button @click="gotoOne">跳转到相应的页面</button>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+  new Vue({
+    el: "#app",
+    data: {
+      msg: "123456"
+    },
+    mounted() {
+      console.log("iframe1加载")
+    },
+    methods: {
+      gotoOne() {
+        // console.log(this.$router)
+        // window.top.postMessage({
+        //   cmd: "routerBack"
+        // })
+        window.top.dispatchEvent(new CustomEvent('testevent', { "detail": 123 }))
+      }
+    }
+  })
+</script>

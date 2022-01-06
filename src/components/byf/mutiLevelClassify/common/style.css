@@ -1,0 +1,17 @@
+
+  .name-column {
+    min-width: 400px;
+    flex: 1;
+  }
+  .img-column {
+    width: 90px;
+  }
+  .time-column {
+    width: 160px;
+  }
+  .status-column {
+    width: 60px;
+  }
+  .operate-column {
+    width: 170px;
+  }
